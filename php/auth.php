@@ -24,6 +24,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 //sign in
 if ($_SERVER['REQUEST_METHOD'] === 'GET') {
-
+  
 }
 ?>
