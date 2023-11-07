@@ -1,43 +1,62 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta
-      name="copyright"
-      content="Victor Hugo"
-    />
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="copyright" content="Victor Hugo" />
+
+  <link rel="stylesheet" href="../styles/style.css" />
+
+
+  <title>Gremio</title>
+
+
+</head>
+
+<body>
+  <div class="header">
+    <div class="votes-guild">
+      <h1 class="votes">Votes</h1>
+      <h1 class="guild">Guild</h1>
+    </div>
+    <p class="distribution">distribuído por: Grêmio Estudantil</p>
+  </div>
+  <div class="container">
     
-    <link rel="stylesheet" href="../styles/style.css" />
 
+    <div class="left-container">
+      <h1 class="main-text">
+        Chegou a <span class="span-your">sua</span> vez de fazer a <span class="span-difference">diferença</span>!
+      </h1>
+    </div>
 
-    <title>Gremio</title>
-    <script src="./script/script.js"></script>
-    <script src="./script/encript.js"></script>
+    <div class="right-container">
+      <div class="form">
+        <div class="control">
+          <div class="field"><h1 class="sign-up-title">Entrar</h1></div>
+          <div class="field">
+            <label for="email" class="label">Email</label>
+            <input type="text" name="email" id="email-field" class="enter-field" placeholder="exemplo@email.com" />
+          </div>
 
-  </head>
-  <body>
-    <div class="container">
-        <div class="header"><h1>Gremio</h1></div>
+          <div class="field">
+            <label for="pass" class="label">Senha</label>
+            <input type="password" name="pass" id="pass" class="enter-field" placeholder="!@#SenhaForte123" />
+          </div>
 
-        <div class="form">
-          <div class="control">
-
-            <div class="field">
-              <label for="email">Email</label>
-              <input type="text" name="email" id="email" />
-            </div>
-            
-            <div class="field">
-              <label for="pass">Senha</label>
-              <input type="password" name="pass" id="pass" />
-            </div>
-            
-            <div class="field">
-              <button type="submit" class="join" onclick="login()">Entrar</button>
-            </div>
+          <div class="field">
+            <button type="submit" class="sign-up" onclick="login()">
+              <p class="sign-up-desc">Não tem uma conta ainda?</p>
+              <p class="sign-up-text">Cadastre-se</p>
+            </button>
+            <button type="submit" class="login" onclick="login()">Entrar</button>
           </div>
         </div>
-
+      </div>
     </div>
-  </body>
+  </div>
+  <script src="./script/script.js"></script>
+  <script src="./script/encript.js"></script>
+</body>
+
 </html>

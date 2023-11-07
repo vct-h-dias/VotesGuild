@@ -19,3 +19,10 @@ const login = async () => {
     console.log('Hello World');
     console.log('Hello World');
 }
+
+
+
+document.getElementById('email').addEventListener('input', function(e) {
+    const email = e.target.value;
+    console.log(email)
+})
