@@ -72,3 +72,7 @@ const confirmPassword = (password) => {
     }
     validateForm();
 }
+
+const signup = () => [
+    window.location.href = "./votes.html"
+]
