@@ -1,1 +1,64 @@
-<!-- TODO: trabalhar na tela de sig up -->
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="copyright" content="Victor Hugo" />
+
+  
+  <title>VotesGuild - Cadastrar-se</title>
+  <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+  <link rel="stylesheet" href="../styles/signup.css" />
+
+
+</head>
+
+<body>
+  <div class="header">
+    <div class="votes-guild">
+      <h1 class="votes">Votes</h1>
+      <h1 class="guild">Guild</h1>
+    </div>
+    <p class="distribution">distribuído por: Grêmio Estudantil</p>
+  </div>
+  <div class="container">
+    <div class="main-container">
+      <div class="form">
+        <div class="control">
+          <div class="field">
+            <h1 class="sign-up-title">Cadastre-se</h1>
+          </div>
+          <div class="field">
+            <label for="email" class="label">Email</label>
+            <input type="text" name="email" id="email" class="enter-field" placeholder="exemplo@email.com" />
+            <p class="error" id="valid-email">O email insirido é inválido</p>
+            <p class="error" id="empty-email">Campo email deve ser preenchido</p>
+          </div>
+
+          <div class="field">
+            <label for="pass" class="label">Senha</label>
+            <input type="password" name="pass" id="pass" class="enter-field" placeholder="!@#SenhaForte123" />
+            <p class="error" id="empty-password">Campo senha deve deve ser preenchido</p> 
+            <p class="error" id="valid-pass">Senha deve ser maior que 8 carcateres</p> 
+          </div>
+          
+          <div class="field">
+            <label for="pass-confirm" class="label">Corfirmar senha</label>
+            <input type="password" name="pass-confirm" id="pass-confirm" class="enter-field" placeholder="!@#SenhaForte123" />
+            <p class="error" id="empty-password-confirm">Campo confirmar senha deve deve ser preenchido</p>
+            <p class="error" id="valid-password-confirm">Senhas não são iguais</p> 
+          </div>
+
+          <div class="field">
+            <input type="submit" class="login" onclick="signup()" id="sign-up" value="Cadastrar-se" disabled/>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="../script/signup.js"></script>
+  <script src="../script/encript.js"></script>
+
+</body>
+
+</html> 

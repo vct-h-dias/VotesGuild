@@ -93,6 +93,7 @@
   justify-content: center;
   align-items: center;
   padding: 1rem;
+  transition: all 0.3s;
 }
 
 .sign-up-title {
@@ -159,6 +160,11 @@
   font-size: 1.2rem;
 }
 
+.login:disabled {
+  cursor: default; /* Altera o cursor para padrão quando desabilitado */
+  transition: none; /* Remove a transição */
+}
+
 .sign-up {
   background-color: #FFF;
   transition: all 0.3s;
@@ -184,8 +190,16 @@
   transition: all 0.3s;
 }
 
-.login:hover {
+.login:not(:disabled):hover {
   background-color: #68F554;
   color: #FFF;
   cursor: pointer;
+}
+
+.error {
+  transition: all 0.3s;
+  color: red;
+  margin-top: -20px; /* Empurra os elementos acima do texto de erro */
+  opacity: 0;
+  transition: opacity 0.3s ease, margin-top 0.3s ease;
 }

@@ -5,11 +5,10 @@
   <meta charset="UTF-8" />
   <meta name="copyright" content="Victor Hugo" />
 
-  <link rel="stylesheet" href="../styles/style.css" />
-
-
-  <title>Gremio</title>
-
+  
+  <title>VotesGuild - Entrar</title>
+  <link rel="stylesheet" href="../styles/signin.css" />
+  <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
 
 </head>
 
@@ -22,7 +21,7 @@
     <p class="distribution">distribuído por: Grêmio Estudantil</p>
   </div>
   <div class="container">
-    
+
 
     <div class="left-container">
       <h1 class="main-text">
@@ -33,30 +32,37 @@
     <div class="right-container">
       <div class="form">
         <div class="control">
-          <div class="field"><h1 class="sign-up-title">Entrar</h1></div>
+          <div class="field">
+            <h1 class="sign-up-title">Entrar</h1>
+          </div>
           <div class="field">
             <label for="email" class="label">Email</label>
-            <input type="text" name="email" id="email-field" class="enter-field" placeholder="exemplo@email.com" />
+            <input type="text" name="email" id="email" class="enter-field" placeholder="exemplo@email.com" />
+            <p class="error" id="valid-email">O email insirido é inválido</p>
+            <p class="error" id="empty-email">Campo email deve ser preenchido</p>
           </div>
 
           <div class="field">
             <label for="pass" class="label">Senha</label>
             <input type="password" name="pass" id="pass" class="enter-field" placeholder="!@#SenhaForte123" />
+            <p class="error" id="empty-password">Campo senha deve deve ser preenchido</p> 
+            <p class="error" id="valid-pass">Senha deve ser maior que 8 carcateres</p> 
           </div>
 
           <div class="field">
-            <button type="submit" class="sign-up" onclick="login()">
+            <button type="submit" class="sign-up" onclick="goToSignUp()">
               <p class="sign-up-desc">Não tem uma conta ainda?</p>
               <p class="sign-up-text">Cadastre-se</p>
             </button>
-            <button type="submit" class="login" onclick="login()">Entrar</button>
+            <input type="submit" class="login" onclick="login()" id="sign-in" value="Entrar" disabled/>
           </div>
         </div>
       </div>
     </div>
   </div>
-  <script src="./script/script.js"></script>
+  <script src="./script/signin.js"></script>
   <script src="./script/encript.js"></script>
+
 </body>
 
 </html>
