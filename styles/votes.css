@@ -7,24 +7,14 @@
   font-family: sans-serif;
 }
 
-.left-container {
-  background: rgb(199, 245, 138);
-  background: linear-gradient(0deg, rgba(199, 245, 138, 1) 0%, rgba(216, 241, 134, 1) 2%, rgba(245, 235, 127, 1) 100%);
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
-
-.right-container {
+.main-container {
   background-color: #f5eb7f;
   width: 100%;
   height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
 }
 
 .main-text {
@@ -84,7 +74,8 @@
   background-color: #FFF;
   display: flex;
   flex-direction: column;
-  width: 80%;
+  margin: 1rem;
+  /* width: 80%; */
 }
 
 .field {
@@ -128,11 +119,13 @@
 }
 
 .enter-field {
+  margin-top: 2rem;
+  margin-bottom: .5rem;
   border: 2px solid #ccc;
   border-radius: 4px;
   padding: 10px;
   font-size: 16px;
-  width: 90%;
+  width: 15%;
   background-color: #fff;
   text-align: center;
 
@@ -149,10 +142,9 @@
   color: #999;
 }
 
-.sign-up,
-.login {
+.vote-btn {
   margin: 2px;
-  width: 90%;
+  width: 10%;
   height: 3rem;
   font-size: 1rem;
   border-radius: 2rem;
@@ -160,37 +152,18 @@
   font-size: 1.2rem;
 }
 
-.login:disabled {
+.vote-btn:disabled {
   cursor: default; /* Altera o cursor para padrão quando desabilitado */
   transition: none; /* Remove a transição */
 }
 
-.sign-up {
-  background-color: #FFF;
-  transition: all 0.3s;
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.sign-up-text {
-  margin-left: 5px;
-  font-weight: 550;
-}
-
-.sign-up:hover {
-  background-color: rgb(255, 177, 0);
-  color: #FFF;
-  cursor: pointer;
-}
-
-.login {
+.vote-btn {
   font-weight: 600;
   transition: all 0.3s;
 }
 
-.login:not(:disabled):hover {
+.vote-btn:not(:disabled):hover {
   background-color: #68F554;
   color: #FFF;
   cursor: pointer;
