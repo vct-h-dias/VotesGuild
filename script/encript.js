@@ -9,15 +9,3 @@ const hash256 = async (password) => {
   
     return hashHex;
 }
-
-const randomRegex = () => {
-    const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789'; // Caracteres permitidos
-    let regex = '';
-      
-    for (let i = 0; i < 16; i++) {
-        const index = Math.floor(Math.random() * chars.length);
-        regex += chars.charAt(index);
-    }
-      
-    return regex;
-}

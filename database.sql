@@ -26,8 +26,8 @@ CREATE TABLE IF NOT EXISTS Votos (
 	FOREIGN KEY (numero_candidato) REFERENCES Candidatos(numero_candidato)
 );
 
-INSERT INTO Estudante (nome, email_usuario, senha_usuario)
-VALUES ('João', 'joao@gamil.com', '2581eceaf58213cfcecd3b83a0edbe01ac866da122fcf66007ae8c0e44ebf54b', 'uAyOL61SiF5izzO5');
+INSERT INTO Estudante (nome, email_usuario, senha_usuario, salt)
+VALUES ('Victor', 'vic@gmail.com', 'a126850ad75e13524bfbefcab933df3b948808a14b7fd5bc1514d11e8fc7c9cd', 'VcxdZa4rWwPGExOU');
 
 INSERT INTO Candidatos (numero_candidato, nome_candidato)
 VALUES (1, 'Paulo'),

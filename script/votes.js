@@ -1,7 +1,10 @@
+const userData = JSON.parse(localStorage.getItem('userData'));
+console.log(userData);
+
 voteInput = document.getElementById('vote');
 voteInput.addEventListener('input', (e) => {
     num = e.target.value;
-    console.log(num)
+    // console.log(num)
 
     const audio = new Audio('/audios/type.mp3')
     audio.play()
