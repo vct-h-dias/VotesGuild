@@ -23,56 +23,11 @@
     </div>
     <div class="container">
         <div class="main-container">
-            <div class="form">
-                <div class="control" id="candidato-tal-69">
-                    <div class="field">
-                        <img src="../images/profile-pic.jpg" alt="Candidato Tal" class="img"/>
-                    </div>
-                    <div class="field">
-                        <h1 class="sign-up-title">Candidato Tal</h1>
-                    </div>
-                    <div class="field">
-                        <h1>69</h1>
-                    </div>
-                </div>
-                
-                <div class="control" id="candidato-tal-69">
-                    <div class="field">
-                        <img src="../images/profile-pic.jpg" alt="Candidato Tal" class="img"/>
-                    </div>
-                    <div class="field">
-                        <h1 class="sign-up-title">Candidato Tal</h1>
-                    </div>
-                    <div class="field">
-                        <h1>69</h1>
-                    </div>
-                </div>
-                
-                <div class="control" id="candidato-tal-69">
-                    <div class="field">
-                        <img src="../images/profile-pic.jpg" alt="Candidato Tal" class="img"/>
-                    </div>
-                    <div class="field">
-                        <h1 class="sign-up-title">Candidato Tal</h1>
-                    </div>
-                    <div class="field">
-                        <h1>69</h1>
-                    </div>
-                </div>
-                
-                <div class="control" id="candidato-tal-69">
-                    <div class="field">
-                        <img src="../images/profile-pic.jpg" alt="Candidato Tal" class="img"/>
-                    </div>
-                    <div class="field">
-                        <h1 class="sign-up-title">Candidato Tal</h1>
-                    </div>
-                    <div class="field">
-                        <h1>69</h1>
-                    </div>
-                </div>
+            <div class="form" id="form">
+               
             </div>
-            <input type="password" name="vote" id="vote" class="enter-field" placeholder="Numero do seu Candidato" />
+            <input type="text" name="vote" id="vote" class="enter-field" placeholder="Numero do seu Candidato" />
+            <p class="error" id="valid-candidate">Não existe candidato com este número</p>
             <input type="submit" class="vote-btn" onclick="vote()" id="vote-btn" value="Votar"/>
             
         </div>

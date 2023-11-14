@@ -44,7 +44,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     $sql = "SELECT * FROM Votos WHERE email_usuario='$email'";
     $res = mysqli_query($conn, $sql);
-    $voted = $res->num_rows ? mysqli_fetch_assoc($res) : false;
+    $voted = $res->num_rows ? mysqli_fetch_assoc($res)['numero_candidato'] : false;
     $userData['voted'] = $voted;
     
     http_response_code(200);

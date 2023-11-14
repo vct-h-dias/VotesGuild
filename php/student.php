@@ -14,7 +14,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   if(isset($data['email']) && isset($data['password']) && isset($data['name'])){
 
     $email = $data['email'];
-    $name = $data['email'];
+    $name = $data['name'];
     $password = $data['password'];
 
     $sql = "SELECT * FROM Estudante WHERE email_usuario='$email'";
