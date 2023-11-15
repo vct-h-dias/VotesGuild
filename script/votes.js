@@ -51,9 +51,46 @@ const onInit = async () => {
             else document.getElementById('form').innerHTML += div;
         })
 
+
+        
+        
+        
         validation.isLoaded = true;
     }
 
+    const votesFetch = await fetch('http://localhost:5000/php/votes.php', {
+        method: 'SEARCH',
+        headers: {
+            'Content-Type': 'application/json'
+        }
+    })
+    const votesJson = await votesFetch.json();
+    const votesData = await votesJson.data;
+
+    // console.log(votesFetch)
+    const table = `
+        <table>
+            <thead>
+                <tr>
+                    <th>Candidato</th>
+                    <th>Quantidade de Votos</th>
+                </tr>
+            </thead>
+            <tbody>
+                ${votesData.map((candidate) => {
+                    return `
+                        <tr>
+                            <td>${candidates.find(c => c.numero_candidato == candidate.numero_candidato).nome_candidato}</td>
+                            <td>${candidate.quantidade_de_votos}</td>
+                        </tr>
+                    `
+                }).join('')}
+            </tbody>
+        </table>
+    `;
+
+    document.getElementById('table').innerHTML = table;
+    
     if (userData.voted) {
         // const candidate = document.getElementById(`${userData.voted}-${userData.id}`);
         // candidate.style.border = "2px solid #68F554";
