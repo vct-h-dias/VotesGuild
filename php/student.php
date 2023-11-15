@@ -1,6 +1,6 @@
 <?php
 include_once('./connections.php');
-include_once('./encript.php');
+include_once('./encrypt.php');
 
 header('Access-Control-Allow-Origin: *');
 header('Access-Control-Allow-Methods: POST');
